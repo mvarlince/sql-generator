@@ -1,9 +1,18 @@
 import MessageDisplay from "./MessageDisplay";
 
-export default function MessagesDisplay(){
-    return(
+export default function MessagesDisplay() {
+    return (
         <>
-        <MessageDisplay />
+            <div className="messages-display">
+                <MessageDisplay />
+                <MessageDisplay />
+                <MessageDisplay />
+                <MessageDisplay />
+                <MessageDisplay />
+                <MessageDisplay />
+                <MessageDisplay />
+                <MessageDisplay />
+            </div>
         </>
     )
 }
