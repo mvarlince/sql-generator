@@ -1,4 +1,8 @@
-export default function CodeDisplay() {
+interface codeDisplayProps {
+    code: string
+}
+
+export default function CodeDisplay({code} : codeDisplayProps) {
     return (
         <>
         <div className="code-display">
@@ -8,7 +12,7 @@ export default function CodeDisplay() {
                 <div className="button last"></div>
             </div>
             <div className="code-output">
-                <p> text </p>
+                <p> {code} </p>
             </div>
         </div>
         </>

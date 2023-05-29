@@ -37,6 +37,14 @@ p, input {
   overflow: hidden;
 }
 
+.code-output{
+  margin: 20px;
+}
+
+.code-output p{
+  color: rgb(255, 189, 45)
+}
+
 .buttons{
   width: 100%;
   height: 35px;
@@ -111,6 +119,18 @@ input{
   justify-content: flex-end;
 }
 
-.button-container{
+.button-container button{
+  text-transform: uppercase;
+  padding: 7px;
+  border: none;
+}
 
+button#get-query{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px 0 0 10px;
+}
+
+button#clear-chat{
+  background-color: rgb(255, 95, 86);
+  border-radius: 0 10px 10px 0a;
 }
