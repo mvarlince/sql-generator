@@ -9,12 +9,10 @@ interface MessageDisplayProps {
 
 export default function MessageDisplay({message} : MessageDisplayProps){
 
-
     return (
         <>
         <div className="message-display">
-            <p id="icon"> -- </p>
-            <p> {message.role} {" - "} </p>
+            <p id="icon"> 👤 </p>
             <p> {message.content} </p>
         </div>
         </>

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import CodeDisplay from './components/CodeDisplay';
 import MessagesDisplay from './components/MessagesDisplay';
+import Header from './components/Header';
 
 interface ChatData {
   role: string,
@@ -25,7 +26,7 @@ function App() {
         })
       }
 
-      const response = await fetch("http://127.0.0.1:5002/sql", options)
+      const response = await fetch("https://sentimental-genie-api.web.app/sql", options)
       const data = await response.json()
 
       console.log(data)
@@ -51,14 +52,18 @@ function App() {
 
   return (
     <div className="app">
+      <Header />
       <MessagesDisplay userMessages={filteredUserMessages}/>
-      <input value={value} onChange={e => setValue(e.target.value)}/>
+      <input placeholder='Example: create a table users and add two users' 
+              value={value} 
+              onChange={e => setValue(e.target.value)}/>
       <CodeDisplay code={filteredAssistantMessage?.content || ""}/>
       <div className="button-container">
         <button id="get-query" onClick={getQuery}> Get Query </button>
         <button id="clear-chat" onClick={clearChat}> Clear Chat </button>
       </div>
     </div>
+
   )
 }
 
