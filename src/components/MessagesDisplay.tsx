@@ -9,6 +9,7 @@ interface MessagesDisplayProps {
     userMessages: UserMessage[]
 }
 
+
 export default function MessagesDisplay({userMessages} : MessagesDisplayProps) {
     return (
         <>
