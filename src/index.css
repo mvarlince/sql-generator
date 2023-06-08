@@ -141,8 +141,13 @@ button#clear-chat{
   border-radius: 0 10px 10px 0a;
 }
 
+.spinner-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .lds-dual-ring {
-  display: inline-block;
   width: 80px;
   height: 80px;
 }

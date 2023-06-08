@@ -13,7 +13,8 @@ export default function CodeDisplay({ code, spinner }: codeDisplayProps) {
                     <div className="button last"></div>
                 </div>
                 <div className="code-output">
-                {spinner ? <div className="lds-dual-ring"></div> : 
+                {spinner ? <div className="spinner-container"> <div className="lds-dual-ring">
+                </div> </div> : 
                     <p> {code} </p>
                } 
                </div>
